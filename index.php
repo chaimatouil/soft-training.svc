@@ -96,7 +96,25 @@ define("BASE_URL", dirname($_SERVER['SCRIPT_NAME']));
         }
 
         ?>
-
+        <?php require_once('api/404.php'); ?>
+        <?php require_once('api/commun_services.php'); ?>
+        <?php require_once('api/createImage.php'); ?>
+        <?php require_once('api/createProducts.php'); ?>
+        <?php require_once('api/createUsers.php'); ?>
+        <?php require_once('api/deleteImage.php'); ?>
+        <?php require_once('api/deleteProducts.php'); ?>
+        <?php require_once('api/deleteUsers.php'); ?>
+        <?php require_once('api/getProducts.php'); ?>
+        <?php require_once('api/getUsers.php'); ?>
+        <?php require_once('api/test.php'); ?>
+        <?php require_once('api/updateProducts.php'); ?>
+        <?php require_once('api/updateUsers.php'); ?>
+        <?php require_once('api/uploadImage.php'); ?>
+        <?php require_once('config/config.php'); ?>
+        <?php require_once('model/Donnes.class.php'); ?>
+        <?php require_once('entity/productEntity.php'); ?>
+        <?php require_once('entity/userEntity.php'); ?>
+        <?php require_once('api/recuperation.php'); ?>
 </body>
 
 </html>
